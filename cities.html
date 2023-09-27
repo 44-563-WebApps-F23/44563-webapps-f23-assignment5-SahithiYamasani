@@ -13,27 +13,35 @@
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <style>
       /* Add custom CSS for additional styling */
-      th {
-          background-color: #343a40; /* Dark background color for header cells */
-          color: white; /* Text color for header cells */
-      }
-
-      tbody tr:nth-child(odd) {
-          background-color: pink; /* Light background color for odd rows */
-      }
-
-      tbody tr:hover {
-          background-color: darkcyan; /* Hover effect for rows */
-      }
-
-     
-
-      
-   
+      tr:hover {background-color: coral;}
   </style>
 </head>
 <body>
-<h1>Visit cities with Sahithi Yamasani</h1>
+<h1><center>Visit cities with Sahithi Yamasani</center></h1>
+</br>
+<div class="container">
+<nav class="navbar navbar-expand-md navbar-light bg-light" style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">A Few Cities</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="basic.html">Basic</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="advanced.html">Advanced</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+</div>
+</br>
 <div class="container">
     <div class="row">
         <div class="col-sm-2">Y</div>
@@ -43,6 +51,7 @@
         <div class="col-sm-2">N</div>
         <div class="col-sm-2">I</div>
     </div>
+</br>
     <div class="row">
         <div class="col-md">Yokohama</div>
         <div class="col-md">Agra</div>
@@ -52,22 +61,32 @@
         <div class="col-md">Indore</div>
     </div>
 </div>
-<p>When you decrease the page's width, the second row containing the city names is more likely to break or wrap to the next line first. This is because these city name elements are placed within larger col-md containers. In contrast, the first row, which displays letters, should remain relatively stable on smaller screens. This stability is achieved by using col-sm-2 containers for the letter elements, which allows them to maintain their layout without breaking as easily.</p>
+</br>
+<div class="container"><p>When you decrease the page's width, the second row containing the city names is more likely to break or wrap to the next line first. This is because these city name elements are placed within larger col-md containers. In contrast, the first row, which displays letters, should remain relatively stable on smaller screens. This stability is achieved by using col-sm-2 containers for the letter elements, which allows them to maintain their layout without breaking as easily.</p></div>
+
 <div class="container">
-  <img src="Agra.jpg" alt="City 1" width="400px" height="400px" />
-  <img src="Mysore.jpg" alt="City 2" width="400px" height="400px">
-  <img src="srinagar.jpg" alt="City 3" width="400px" height="400px">
+  <img src="Agra.jpg" alt="City 1" width="350px" height="350px" />
+  <img src="Mysore.jpg" alt="City 2" width="350px" height="350px">
+  <img src="srinagar.jpg" alt="City 3" width="350px" height="350px">
 </div>
+
+</br>
+</br>
+
 <div class="container">
-  <img src="Agra.jpg" alt="City 1" class="img-fluid img-thumbnail" height="200px" width="200px">
-  <img src="Mysore.jpg" alt="City 2" class="img-fluid img-thumbnail" height="200px" width="200px">
-  <img src="srinagar.jpg" alt="City 3" class="img-fluid img-thumbnail" height="200px" width="200px">
+  <img src="Agra.jpg" alt="City 1" class="img-fluid img-thumbnail" width="350px" height="350px" >
+  <img src="Mysore.jpg" alt="City 2" class="img-fluid img-thumbnail" width="350px" height="350px">
+  <img src="srinagar.jpg" alt="City 3" class="img-fluid img-thumbnail" width="350px" height="350px">
 </div>
+
+</br>
+</br>
+
 <div class="container table-responsive">
-  <table class="table table-bordered table-striped">
+  <table class="table table-bordered table-success table-striped table-hover">
       <!-- Add a caption element before the thead -->
       <caption>Table of Letters, Cities, Rivers, and Trees</caption>
-      <thead>
+      <thead class="table-dark">
           <tr>
               <!-- Set scope for table headers -->
               <th scope="col">Letter</th>
@@ -77,37 +96,37 @@
           </tr>
       </thead>
       <tbody>
-        <tr class="success-row">
+        <tr >
               <th scope="row">Y</th>
               <td>Yokohama</td>
               <td>Yellowstone</td>
               <td>Yew Tree</td>
           </tr>
-          <tr class="danger-row">
+          <tr>
               <th scope="row">A</th>
               <td>Agra</td>
               <td>Amazon River</td>
               <td>Ash Tree</td>
           </tr>
-          <tr class="warning-row">
+          <tr >
               <th scope="row">M</th>
               <td>Mysore</td>
               <td>Mississippi River</td>
               <td>Maple Tree</td>
           </tr>
-          <tr class="info-row">
+          <tr >
               <th scope="row">S</th>
               <td>Srinagar</td>
               <td>Seine River</td>
               <td>Sycamore Tree</td>
           </tr>
-          <tr class="success-row">
+          <tr >
               <th scope="row">N</th>
               <td>Nashik</td>
               <td>Nile River</td>
               <td>Norway Spruce Tree</td>
           </tr>
-          <tr class="danger-row">
+          <tr >
               <th scope="row">I</th>
               <td>Indore</td>
               <td>Indus River</td>
@@ -139,16 +158,79 @@
       </div>
 </div>
 </div>
-<div class="dropdown">
+
+</br>
+</br>
+
+<div class="container dropdown">
     <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
       Dropdown Menu
     </button>
     <ul class="dropdown-menu">
       <li><a class="dropdown-item" href="basic.html">Basic</a></li>
       <li><a class="dropdown-item" href="advanced.html">Advanced</a></li>
-      
     </ul>
   </div>
 
+  </br>
+  </br>
+
+  <div class="container">
+  <form>
+    <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+</br>
+    <div class="form-group">
+        <label for="city">City</label>
+        <input type="text" class="form-control" id="city" placeholder="Enter your city">
+    </div>
+</br>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="newsletter">
+        <label class="form-check-label" for="newsletter">Sign up for newsletter?</label>
+    </div></br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+ </form>
+</div>
+</br>
+<div class="container">
+    <div class="row">
+<div class="card" style="width: 22rem;">
+    <img src="Agra.jpg" class="card-img-top" alt="Agra" height="245px">
+    <div class="card-body">
+      <p class="card-text">Agra, located in northern India, is famous for the breathtaking Taj Mahal, a UNESCO World Heritage site and one of the most iconic symbols of love in the world. It also boasts a rich historical legacy with other notable monuments like the Agra Fort and Fatehpur Sikri.</p>
+      <div class="card-footer">
+      <a href="https://en.wikipedia.org/wiki/Agra" class="card-link">More about Agra</a>
+    </div>
+    </div>
+  </div>
+
+
+  <div class="card" style="width: 22rem;">
+    <img src="Mysore.jpg" class="card-img-top" alt="Mysore">
+    <div class="card-body">
+      <p class="card-text">Mysore, a city in southern India, is renowned for its opulent Mysore Palace, vibrant festivals like Dasara, and a rich cultural heritage. Known as the "City of Palaces," it offers a blend of history, art, and natural beauty, making it a captivating tourist destination</p>
+      <div class="card-footer">
+      <a href="https://en.wikipedia.org/wiki/Mysore" class="card-link">More about Mysore</a>
+    </div>
+    </div>
+  </div>
+
+
+  <div class="card" style="width: 22rem;">
+    <img src="srinagar.jpg" class="card-img-top" alt="Srinagar">
+    <div class="card-body">
+      <p class="card-text">Srinagar, in Jammu and Kashmir, India, is renowned for its Dal Lake, houseboats, and Mughal gardens. Despite challenges, it's a serene destination, celebrated for its natural beauty, handicrafts, and warm hospitality, making it a must-visit for a unique cultural experience</p>
+      <div class="card-footer">
+      <a href="https://en.wikipedia.org/wiki/Srinagar" class="card-link">More about Srinagar</a>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+</br>
 </body>
 </html>
